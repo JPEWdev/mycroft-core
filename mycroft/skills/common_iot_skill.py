@@ -275,7 +275,7 @@ class IoTRequest():
         if data.get('attribute') not in (None, ''):
             data['attribute'] = Attribute[data['attribute']]
         if data.get('state') not in (None, ''):
-            data['state'] = Attribute[data['state']]
+            data['state'] = State[data['state']]
 
         return cls(**data)
 
